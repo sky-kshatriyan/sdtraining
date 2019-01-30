@@ -1,4 +1,4 @@
-# PowerShell Scripts : Sample Maven Application
+# Devops : Sample Maven Application
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-brightgreen.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Website](https://img.shields.io/website-up-down-green-red/http/skydevops.co.in.svg?label=skydevops)]()
