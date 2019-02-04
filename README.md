@@ -96,6 +96,36 @@ Sample Maven application
 </project>
 ```
 
+## settings.xml Template
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+  
+  <servers>
+    <server>
+      <id>sdSnapRepo</id>
+      <username>username</username>
+      <password>password</password>
+    </server>
+    <server>
+      <id>sdReleaseRepo</id>
+      <username>username</username>
+      <password>password</password>
+    </server>
+  </servers>
+  <mirrors>
+    <mirror>
+      <id>sdGroupRepo</id>
+      <name>central</name>
+      <url>http://[host]:[port]/content/groups/sdGroupRepo/</url>
+      <mirrorOf>*</mirrorOf>
+    </mirror>
+  </mirrors>
+</settings>
+```
+
 ## License
 
 Licensed under the Apache License V2.0. See the [LICENSE file](LICENSE) for details.
