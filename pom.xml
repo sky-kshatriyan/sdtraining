@@ -64,20 +64,16 @@
       </plugins>
     </pluginManagement>
   </build>
-  <distributionManagement>
-    <repository>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-      <id>central</id>
-      <name>libs-release</name>
-      <url>http://artifactory.skydevops.in:80/artifactory/libs-release</url>
-    </repository>
-    <repository>
-      <snapshots />
+<distributionManagement>
+  <snapshotRepository>
       <id>snapshots</id>
-      <name>libs-snapshot</name>
-      <url>http://artifactory.skydevops.in:80/artifactory/libs-snapshot</url>
-    </repository>
-  </distributionManagement>
+      <name>artifactory-snapshots</name>
+      <url>https://artifactory.skydevops.in:80/artifactory/libs-snapshot-local</url>
+  </snapshotRepository>
+    <repository>
+      <id>central</id>
+      <name>artifactory-releases</name>
+      <url>https://artifactory.skydevops.in:80/artifactory/libs-release-local</url>
+  </repository>
+</distributionManagement>
 </project>
