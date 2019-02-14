@@ -5,8 +5,6 @@
 </head>
 <body>
 	<h3>Welcome to Devops Training</h3>
-	<h3>hooray!!, Automation</h3>
-	<h3>Trying some automation using CI-CD</h3>
-	<h3>Thank You</h3>
+	<h3>Automated Deployment using Jenkins, Artifactory, Github and Tomcat</h3>
 </body>
 </html>
